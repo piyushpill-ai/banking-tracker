@@ -1,0 +1,83 @@
+# Ignore data files (keep structure, ignore content)
+*.csv
+*.json
+!requirements.txt
+!package.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+debug_*.html
+website_structure.html
+
+# Streamlit
+.streamlit/
+
+# AWS
+.aws/
+*.pem
+
+# Environment variables
+.env
+.env.local
+
+# Large data directories (keep structure but ignore large files)
+realtime_banking_tracker/data/*.json
+monthly_mortgage_data/*.json
+realtime_data/*.json
+term-deposits/data/*.json
+
+# Keep only the latest data samples for demo
+!*sample*.csv
+!*demo*.json
